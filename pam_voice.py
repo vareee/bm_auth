@@ -96,7 +96,7 @@ def authenticate_user(username, pamh=None):
     else:
         print(message)
 
-    threshold = 0.6
+    threshold = 0.8
     if similarity > threshold:
         message = "Голосовая аутентификация успешна."
         if pamh:
